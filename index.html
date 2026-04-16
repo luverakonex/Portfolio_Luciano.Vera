@@ -1,0 +1,309 @@
+<!-- <!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Luciano Vera</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+  <h1>Luciano Vera</h1>
+  <nav>
+    <a href="#about">Sobre mí</a>
+    <a href="#projects">Proyectos</a>
+    <a href="#skills">Skills</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Desarrollador Web</h2>
+  <p>Especializado en desarrollo FrontEnd con experiencia en proyectos reales utilizando tecnologías modernas como React, Node.js y bases de datos SQL/NoSQL.</p>
+  <a href="#projects" class="btn">Ver proyectos</a>
+</section>
+
+<section id="about">
+  <h2>Sobre mí</h2>
+  <p>Soy desarrollador web con fuerte enfoque en diseño moderno y funcional. Me especializo en crear experiencias digitales eficientes, combinando estética y rendimiento.</p>
+</section>
+
+<section id="projects">
+  <h2>Proyectos</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h3>Aguas del Aconquija</h3>
+      <p>Sistema web para control de stock, ventas y logística de distribución de agua.</p>
+    </div>
+
+    <div class="card">
+      <h3>E-commerce Tecnología</h3>
+      <p>Gestión completa de base de datos SQL y NoSQL para productos, stock y ventas.</p>
+    </div>
+
+    <div class="card">
+      <h3>Landing ALNOA</h3>
+      <p>Landing page institucional con registro de usuarios y diseño moderno.</p>
+    </div>
+
+    <div class="card">
+      <h3>Estética Vehicular Paz</h3>
+      <p>Sistema local para registro de clientes y generación de datos exportables.</p>
+    </div>
+
+    <div class="card">
+      <h3>Fundación Participando</h3>
+      <p>Landing page con enfoque social y estructura adaptable.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>C#</span>
+    <span>Java</span>
+    <span>JavaScript</span>
+    <span>Python (básico)</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>React</span>
+    <span>Node.js</span>
+    <span>SQL / NoSQL</span>
+    <span>WordPress</span>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Luciano Vera - Portfolio</p>
+</footer>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Luciano Vera</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0a0a0a;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: rgba(0,0,0,0.9);
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255,0,0,0.2);
+      z-index: 1000;
+    }
+
+    header h1 {
+      color: #ff0000;
+      font-size: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: gold;
+    }
+
+    section {
+      padding: 100px 50px;
+      min-height: 100vh;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #0a0a0a, #1a0000);
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      color: gold;
+    }
+
+    .hero p {
+      margin-top: 15px;
+      max-width: 600px;
+      opacity: 0.8;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: 1px solid red;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: red;
+      transform: scale(1.05);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #111;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid rgba(255,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      border-color: gold;
+    }
+
+    .card h3 {
+      color: red;
+      margin-bottom: 10px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #1a1a1a;
+      padding: 8px 12px;
+      margin: 5px;
+      border-radius: 20px;
+      border: 1px solid red;
+      transition: 0.3s;
+    }
+
+    .skills span:hover {
+      background: red;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid rgba(255,0,0,0.2);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);} 
+      to {opacity: 1; transform: translateY(0);} 
+    }
+
+    @media(max-width: 768px){
+      header {padding: 15px 20px;}
+      section {padding: 80px 20px;}
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Luciano Vera</h1>
+  <nav>
+    <a href="#about">Sobre mí</a>
+    <a href="#projects">Proyectos</a>
+    <a href="#skills">Skills</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Desarrollador Web</h2>
+  <p>Especializado en desarrollo FrontEnd con experiencia en proyectos reales utilizando tecnologías modernas como React, Node.js y bases de datos SQL/NoSQL.</p>
+  <a href="#projects" class="btn">Ver proyectos</a>
+</section>
+
+<section id="about">
+  <h2>Sobre mí</h2>
+  <p>Soy desarrollador web con fuerte enfoque en diseño moderno y funcional. Me especializo en crear experiencias digitales eficientes, combinando estética y rendimiento.</p>
+</section>
+
+<section id="projects">
+  <h2>Proyectos</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h3>Aguas del Aconquija</h3>
+      <p>Sistema web para control de stock, ventas y logística de distribución de agua.</p>
+    </div>
+
+    <div class="card">
+      <h3>E-commerce Tecnología</h3>
+      <p>Gestión completa de base de datos SQL y NoSQL para productos, stock y ventas.</p>
+    </div>
+
+    <div class="card">
+      <h3>Landing ALNOA</h3>
+      <p>Landing page institucional con registro de usuarios y diseño moderno.</p>
+    </div>
+
+    <div class="card">
+      <h3>Estética Vehicular Paz</h3>
+      <p>Sistema local para registro de clientes y generación de datos exportables.</p>
+    </div>
+
+    <div class="card">
+      <h3>Fundación Participando</h3>
+      <p>Landing page con enfoque social y estructura adaptable.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>C#</span>
+    <span>Java</span>
+    <span>JavaScript</span>
+    <span>Python (básico)</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>React</span>
+    <span>Node.js</span>
+    <span>SQL / NoSQL</span>
+    <span>WordPress</span>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Luciano Vera - Portfolio</p>
+</footer>
+
+</body>
+</html>
